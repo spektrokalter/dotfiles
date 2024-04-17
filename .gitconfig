@@ -1,0 +1,17 @@
+[advice]
+	detachedHead = false
+[core]
+	excludesfile = ~/.gitignore.global
+[init]
+	defaultBranch = main
+[include]
+	path = ~/.gitconfig.private
+[merge]
+	conflictstyle = diff3
+[push]
+	autoSetupRemote = true
+[color]
+	ui = false
+[status]
+	branch = true
+	short = true

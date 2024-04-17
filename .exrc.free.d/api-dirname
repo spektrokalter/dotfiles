@@ -1,0 +1,19 @@
+abbreviate  aGe  api GET     "$(dirname -- %)"
+abbreviate  aHe  api HEAD    "$(dirname -- %)"
+abbreviate  aPo  api POST    "$(dirname -- %)"
+abbreviate  aPu  api PUT     "$(dirname -- %)"
+abbreviate  aDe  api DELETE  "$(dirname -- %)"
+abbreviate  aCo  api CONNECT "$(dirname -- %)"
+abbreviate  aOp  api OPTIONS "$(dirname -- %)"
+abbreviate  aTr  api TRACE   "$(dirname -- %)"
+abbreviate  aPa  api PATCH   "$(dirname -- %)"
+
+abbreviate  aaGe  api GET     "$(dirname -- %)" | jq | less
+abbreviate  aaHe  api HEAD    "$(dirname -- %)" | jq | less
+abbreviate  aaPo  api POST    "$(dirname -- %)" | jq | less
+abbreviate  aaPu  api PUT     "$(dirname -- %)" | jq | less
+abbreviate  aaDe  api DELETE  "$(dirname -- %)" | jq | less
+abbreviate  aaCo  api CONNECT "$(dirname -- %)" | jq | less
+abbreviate  aaOp  api OPTIONS "$(dirname -- %)" | jq | less
+abbreviate  aaTr  api TRACE   "$(dirname -- %)" | jq | less
+abbreviate  aaPa  api PATCH   "$(dirname -- %)" | jq | less

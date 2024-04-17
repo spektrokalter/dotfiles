@@ -1,0 +1,11 @@
+#!/hint/sh
+
+[ -f ~/.profile ] && . ~/.profile
+
+xset r off
+setxkbmap -option ctrl:nocaps
+xmodmap -e 'keycode 23 = Escape'
+
+# seahorse "couldn't add keyring" fix
+#
+. /etc/X11/xinit/xinitrc.d/50-systemd-user.sh

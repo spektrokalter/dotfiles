@@ -1,0 +1,10 @@
+#!/hint/bash
+
+load_apirc_d() {
+	local f
+	for f in "$1"/*; do
+		source -- "$f"
+	done
+}
+
+load_apirc_d ~/.apirc.d

@@ -1,0 +1,7 @@
+#!/hint/bash
+
+CURL=(curl --location --silent)
+
+if [[ -v CURL_VERBOSE ]] && [[ "$CURL_VERBOSE" == '1' ]]; then
+	CURL+=(-v)
+fi

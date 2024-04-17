@@ -1,0 +1,9 @@
+#!/hint/bash
+
+# Create a variable for manual use.
+#
+#export UA='User-Agent: curl'
+
+# Or let curl set the header for us.
+#
+export UA=''

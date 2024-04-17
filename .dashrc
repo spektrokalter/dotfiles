@@ -1,0 +1,4 @@
+#!/hint/sh
+
+PS1=
+set -o vi

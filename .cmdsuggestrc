@@ -1,0 +1,18 @@
+#!/hint/bash
+
+if [[
+	"$PWD" == "$HOME" &&
+	"${TMUX:+x}" &&
+	"$(tmux display-message -p '#{window_name}')" == 'vi'
+]]; then
+	export CMDSUGGEST_PACMAN=1
+fi
+
+run_cmdsuggest() {
+	local temp="$1"
+
+	local f
+	for f in ~/.cmdsuggest.d/*; do
+		"$f" <"$temp" ||:
+	done
+}
