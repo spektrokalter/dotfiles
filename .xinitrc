@@ -1,5 +1,5 @@
 #!/hint/sh
 
-[ -f ~/.xprofile ] && . ~/.xprofile 
+[ -f ~/.xprofile ] && [ -r ~/.xprofile ] && . ~/.xprofile 
 
 exec dwm

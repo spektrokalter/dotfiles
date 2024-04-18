@@ -24,4 +24,4 @@ export ENV="$HOME/.dashrc"
 
 export FZF_DEFAULT_OPTS_FILE="$HOME/.fzfrc"
 
-[ -f ~/.profile.private ] && . ~/.profile.private
+[ -f ~/.profile.private ] && [ -r ~/.profile.private ] && . ~/.profile.private

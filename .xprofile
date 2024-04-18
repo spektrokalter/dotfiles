@@ -1,6 +1,6 @@
 #!/hint/sh
 
-[ -f ~/.profile ] && . ~/.profile
+[ -f ~/.profile ] && [ -r ~/.profile ] && . ~/.profile
 
 xset r off
 setxkbmap -option ctrl:nocaps
