@@ -8,8 +8,6 @@ export _DOT_PROFILE=1
 
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-export MANPAGER='vim +MANPAGER "+set modifiable" "+syntax off" --not-a-term -'
-
 export SSH_AUTH_SOCK="$(systemd-path user-runtime)/ssh-agent.socket"
 
 # https://wiki.archlinux.org/title/Java_Runtime_Environment_fonts
