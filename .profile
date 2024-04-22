@@ -17,6 +17,7 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true'
 # no color
 #
 export JQ_COLORS='0;39:0;39:0;39:0;39:0;39:0;39:0;39:0;39'
+export SYSTEMD_COLORS='false'
 
 export ENV="$HOME/.dashrc"
 
