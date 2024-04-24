@@ -1,0 +1,6 @@
+#!/hint/bash
+
+read -r -d '' JSON <<-'EOF' ||:
+	accept: application/json
+	content-type: application/json
+EOF
