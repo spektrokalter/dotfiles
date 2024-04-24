@@ -1,6 +1,6 @@
 #!/hint/bash
 
-CURL=(curl --location)
+CURL+=(--location)
 
 if [[ "${CURL_VERBOSE:-0}" == '1' ]]; then
 	CURL+=(-v)
