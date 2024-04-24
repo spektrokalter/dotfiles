@@ -4,20 +4,20 @@
 "
 map    :.w !sh
 map  }   }mx'':,'xw !sh
-map  e   :,/^[[:space:]]*EOF$/w !sh
+map  e   :,/^[[:blank:]]*EOF$/w !sh
 map    !!write-run sh
 map  }   !}write-run sh
-map  e   :,/^[[:space:]]*EOF$/!write-run sh
+map  e   :,/^[[:blank:]]*EOF$/!write-run sh
 "
 "
 " run sh commands as root
 "
 map  ss  :.w !doas sh
 map  s}  }mx'':,'xw !doas sh
-map  se  :,/^[[:space:]]*EOF$/w !doas sh
+map  se  :,/^[[:blank:]]*EOF$/w !doas sh
 map  ss  !!doas write-run sh
 map  s}  !}doas write-run sh
-map  se  :,/^[[:space:]]*EOF$/!doas write-run sh
+map  se  :,/^[[:blank:]]*EOF$/!doas write-run sh
 "
 "
 " run sh commands on the terminal
