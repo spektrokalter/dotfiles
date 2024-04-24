@@ -1,6 +1,6 @@
 #!/hint/bash
 
-unset PS1 HISTFILE
+unset HISTFILE
 HISTCONTROL=ignoreboth:erasedups
 
 # change window title to ''
