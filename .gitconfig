@@ -8,8 +8,6 @@
 	path = ~/.gitconfig.private
 [merge]
 	conflictstyle = diff3
-[push]
-	autoSetupRemote = true
 [color]
 	ui = false
 [status]
