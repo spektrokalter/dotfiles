@@ -2,4 +2,6 @@
 
 [ -f ~/.xprofile ] && [ -r ~/.xprofile ] && . ~/.xprofile 
 
-exec dwm
+systemctl --user start st@1.service
+
+exec systemctl --user --wait start dwm.service
