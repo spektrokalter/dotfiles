@@ -1,5 +1,7 @@
 #!/hint/bash
 
+set -o vi
+
 unset HISTFILE
 HISTCONTROL=ignoreboth:erasedups
 
