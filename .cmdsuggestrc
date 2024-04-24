@@ -5,7 +5,7 @@ if [[
 	"${TMUX:+x}" &&
 	"$(tmux display-message -p '#{window_name}')" == 'vi'
 ]]; then
-	export CMDSUGGEST_PACMAN=1
+	export CMDSUGGEST_PACMAN='1'
 fi
 
 run_cmdsuggest() {
