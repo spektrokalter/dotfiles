@@ -1,6 +1,8 @@
 set compatible
 source ~/.exrc
 
+set noswapfile
+
 "
 " look and feel
 "
