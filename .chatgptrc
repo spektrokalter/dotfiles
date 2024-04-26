@@ -1,0 +1,3 @@
+#!/hint/bash
+
+CURL+=(--socks5-hostname 'localhost:1080')
