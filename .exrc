@@ -32,7 +32,7 @@ map  ::  0"xy$:@x
 map  :}  0"xy}:@x
 "
 "
-" run the current line as an @ macro
+" run @ macros
 "
 map  @  ^"xy$@x
 "
