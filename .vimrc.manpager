@@ -1,0 +1,6 @@
+"
+" reset some MANPAGER settings
+"
+
+syntax off
+set modifiable
