@@ -1,23 +1,23 @@
 " run sh commands
 "
-" ^A} ^X} ^X^X support counting
+" ^A} ^Axx ^Ax} support counting
 "
 map    :.w !sh
 map  }   }mx'':,'xw !sh
 map  e   :,/^[[:blank:]]*EOF$/w !sh
-map    !!write-run sh
-map  }   !}write-run sh
-map  e   :,/^[[:blank:]]*EOF$/!write-run sh
+map  xx  !!write-run sh
+map  x}  !}write-run sh
+map  xe  :,/^[[:blank:]]*EOF$/!write-run sh
 "
 "
 " run sh commands as root
 "
-map  ss  :.w !doas sh
-map  s}  }mx'':,'xw !doas sh
-map  se  :,/^[[:blank:]]*EOF$/w !doas sh
-map  ss  !!doas write-run sh
-map  s}  !}doas write-run sh
-map  se  :,/^[[:blank:]]*EOF$/!doas write-run sh
+map  ss   :.w !doas sh
+map  s}   }mx'':,'xw !doas sh
+map  se   :,/^[[:blank:]]*EOF$/w !doas sh
+map  sxx  !!doas write-run sh
+map  sx}  !}doas write-run sh
+map  sxe  :,/^[[:blank:]]*EOF$/!doas write-run sh
 "
 "
 " run sh commands on the terminal
@@ -28,8 +28,8 @@ map  st  0y$Op0i!doas -- "xdd:@x
 "
 " run ex commands
 "
-map    0"xy$:@x
-map  }   0"xy}:@x
+map  ::  0"xy$:@x
+map  :}  0"xy}:@x
 "
 "
 " run the current line as an @ macro
