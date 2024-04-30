@@ -2,6 +2,7 @@
 	detachedHead = false
 [core]
 	excludesfile = ~/.gitignore.global
+	pager = less -FRSXMK
 [init]
 	defaultBranch = main
 [include]
