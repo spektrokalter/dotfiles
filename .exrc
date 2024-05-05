@@ -37,8 +37,8 @@ map  :}  0"xy}:@x
 map  @  ^"xy$@x
 "
 "
-map  #1  :w !grep '^\(   \)\?[^[:blank:]]' | more
-map  #2  !!write-run cmdsuggest
+map  #1  !!write-run cmdsuggest
+map  #2  :w !grep '^\(   \)\?[^[:blank:]]' | more
 "
 "
 map  OA  
