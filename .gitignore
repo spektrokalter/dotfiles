@@ -1,6 +1,6 @@
 /*
 
 !/.apirc.d
-!/.apirc.free.d
+!/.apirc.include.d
 
-!/.exrc.free.d
+!/.exrc.include.d
