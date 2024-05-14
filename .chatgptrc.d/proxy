@@ -1,0 +1,5 @@
+#!/hint/bash
+
+if [[ "${OPENAI_PROXY:-0}" == '1' ]]; then
+	CURL+=(--socks5-hostname 'localhost:1080')
+fi
