@@ -4,3 +4,8 @@
 !/.apirc.include.d
 
 !/.exrc.include.d
+
+!/.config
+/.config/*
+!/.config/environment.d
+/.config/environment.d/*.private.conf
