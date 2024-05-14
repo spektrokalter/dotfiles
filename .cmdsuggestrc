@@ -1,12 +1,18 @@
 #!/hint/bash
 
-if [[
+if _wn="$(tmux display-message -p '#{window_name}')"; [[
 	"$PWD" == "$HOME" &&
 	"${TMUX:+x}" &&
-	"$(tmux display-message -p '#{window_name}')" == 'vi'
+	(
+		"$_wn" == 'vi' ||
+		"$_wn" == 'nvi' ||
+		"$_wn" == 'vim' ||
+		"$_wn" == 'nvim'
+	)
 ]]; then
 	export CMDSUGGEST_PACMAN='1'
 fi
+unset _wn
 
 run_cmdsuggest() {
 	local temp="$1"
