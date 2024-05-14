@@ -10,4 +10,6 @@
 !/.config/environment.d
 /.config/environment.d/*.private.conf
 
+!/.chatgptrc.d
+
 !/.mos.sh.include.d
