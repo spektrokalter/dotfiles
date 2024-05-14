@@ -9,3 +9,5 @@
 /.config/*
 !/.config/environment.d
 /.config/environment.d/*.private.conf
+
+!/.mos.sh.include.d
