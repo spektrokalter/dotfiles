@@ -1,5 +1,0 @@
-#!/hint/bash
-
-if [[ "${MOS_SH_MIRAI_PROXY:-0}" == '1' ]]; then
-	SSH_OPTS=(-J eu-north)
-fi
