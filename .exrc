@@ -3,7 +3,7 @@
 " ^A} ^Axx ^Ax} support counting
 "
 map    :.w !sh
-map  }   }mx'':,'xw !sh
+map  }   }mx``:,'xw !sh
 map  e   :,/^[[:blank:]]*EOF$/w !sh
 map  xx  !!write-run sh
 map  x}  !}write-run sh
@@ -13,7 +13,7 @@ map  xe  :,/^[[:blank:]]*EOF$/!write-run sh
 " run sh commands as root
 "
 map  ss   :.w !doas sh
-map  s}   }mx'':,'xw !doas sh
+map  s}   }mx``:,'xw !doas sh
 map  se   :,/^[[:blank:]]*EOF$/w !doas sh
 map  sxx  !!doas write-run sh
 map  sx}  !}doas write-run sh
