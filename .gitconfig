@@ -14,3 +14,6 @@
 [status]
 	branch = true
 	short = true
+[commit]
+	cleanup = verbatim
+	status = off
