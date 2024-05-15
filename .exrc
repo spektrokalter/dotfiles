@@ -1,26 +1,38 @@
-" run sh commands
+" mark a region
 "
-" ^A} ^Axx ^Ax} support counting
-"
-map    :.w !sh
-map  }   }mx``:,'xw !sh
-map  e   :,/^[[:blank:]]*EOF$/w !sh
-map  xx  !!write-run sh
-map  x}  !}write-run sh
-map  xe  !/^[[:blank:]]*EOF$/+0write-run sh
+map  #<  mvmw
+map  #>  mw
+map  #{  mw{mv``
+map  #}  mv}mw``
+map  #e  mv/^[[:blank:]]*EOF$/mw``
+map  #%  :1mark v|$mark w
 "
 "
-" run sh commands as root
+" pipe marked region to shell
 "
-map  ss   :.w !doas sh
-map  s}   }mx``:,'xw !doas sh
-map  se   :,/^[[:blank:]]*EOF$/w !doas sh
-map  sxx  !!doas write-run sh
-map  sx}  !}doas write-run sh
-map  sxe  !/^[[:blank:]]*EOF$/+0doas write-run sh
+map  #a  :'v,'ww !sh
+map  #A  'v!'wwrite-run sh
+map  #s  :'v,'ww !doas sh
+map  #S  'v!'wdoas write-run sh
 "
 "
-" run sh commands on the terminal
+" shortcuts to shell
+"
+map     #<#a
+map  }    #}#a
+map  e    #e#a
+map  xx   #<#A
+map  x}   #}'v!`wwrite-run sh
+map  xe   #e#A
+map  ss   #<#s
+map  s}   #}#s
+map  se   #e#s
+map  sxx  #<#S
+map  sx}  #}'v!`wwrite-run sh
+map  sxe  #e#S
+"
+"
+" run shell commands on the terminal
 "
 map  t   0y$Op0i!"xdd:@x
 map  st  0y$Op0i!doas -- "xdd:@x
@@ -43,13 +55,3 @@ map  #2  :w !grep '^\(   \)\?[^[:blank:]]' | more
 "
 map  OA  
 map  OB  
-"
-"
-" mark a region
-"
-map  #<  mvmw
-map  #>  mw
-map  #{  mw{mv``
-map  #}  mv}mw``
-map  #e  mv/^[[:blank:]]*EOF$/mw``
-map  #%  :1mark v|$mark w
