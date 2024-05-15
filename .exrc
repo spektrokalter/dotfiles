@@ -43,3 +43,13 @@ map  #2  :w !grep '^\(   \)\?[^[:blank:]]' | more
 "
 map  OA  
 map  OB  
+"
+"
+" mark a region
+"
+map  #<  mvmw
+map  #>  mw
+map  #{  mw{mv``
+map  #}  mv}mw``
+map  #%  :1mark v|$mark w
+map  #:  :'v,'w
