@@ -7,7 +7,7 @@ map  }   }mx``:,'xw !sh
 map  e   :,/^[[:blank:]]*EOF$/w !sh
 map  xx  !!write-run sh
 map  x}  !}write-run sh
-map  xe  :,/^[[:blank:]]*EOF$/!write-run sh
+map  xe  !/^[[:blank:]]*EOF$/+0write-run sh
 "
 "
 " run sh commands as root
@@ -17,7 +17,7 @@ map  s}   }mx``:,'xw !doas sh
 map  se   :,/^[[:blank:]]*EOF$/w !doas sh
 map  sxx  !!doas write-run sh
 map  sx}  !}doas write-run sh
-map  sxe  :,/^[[:blank:]]*EOF$/!doas write-run sh
+map  sxe  !/^[[:blank:]]*EOF$/+0doas write-run sh
 "
 "
 " run sh commands on the terminal
