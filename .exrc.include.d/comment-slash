@@ -1,4 +1,0 @@
-map  cc   !!sed 's-^-//-'
-map  c}   !}sed 's-^-//-'
-map  cuu  !!sed 's-^//--'
-map  cu}  !}sed 's-^//--'
