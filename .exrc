@@ -2,8 +2,8 @@
 "
 map  #<  mvmw
 map  #>  mw
-map  #{  mw{mv``
-map  #}  mv}mw``
+map  #{  {mv``mw
+map  #}  }mw``mv
 map  #e  mv/^[[:blank:]]*EOF$/mw``
 map  #%  :1mark v|$mark w
 "
