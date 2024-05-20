@@ -49,6 +49,13 @@ map  :}  0"xy}:@x
 map  @  ^"xy$@x
 "
 "
+" chatgpt shortcuts
+"
+map  #Gp  'v!'wwrite-run chatgpt-here proofread
+map  #Gt  'v!'wwrite-run chatgpt-here translate
+map  #Gc  'v!'wwrite-run chatgpt-here chat
+"
+"
 map  #1  !!write-run cmdsuggest
 map  #2  :w !grep '^\(   \)\?[^[:blank:]]' | more
 "
