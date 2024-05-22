@@ -4,7 +4,7 @@ map  #<  mvmw
 map  #>  mw
 map  #{  {mv``mw
 map  #}  }mw``mv
-map  #e  mv/^[[:blank:]]*EOF$/mw``
+map  #E  mv/^[[:blank:]]*EOF$/mw``
 map  #%  :1mark v|$mark w
 "
 "
@@ -20,16 +20,16 @@ map  #S  'v!'wdoas write-run sh
 "
 map     #<#a
 map  }    #}#a
-map  e    #e#a
+map  e    #E#a
 map  xx   #<#A
 map  x}   #}'v!`wwrite-run sh
-map  xe   #e#A
+map  xe   #E#A
 map  ss   #<#s
 map  s}   #}#s
-map  se   #e#s
+map  se   #E#s
 map  sxx  #<#S
 map  sx}  #}'v!`wwrite-run sh
-map  sxe  #e#S
+map  sxe  #E#S
 "
 "
 " run shell commands on the terminal
