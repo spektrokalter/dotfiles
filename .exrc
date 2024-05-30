@@ -28,7 +28,7 @@ map  ss   #<@s@
 map  s}   #}@s@
 map  se   #E@s@
 map  sxx  #<@S@
-map  sx}  #}'v!`wwrite-run sh
+map  sx}  #}'v!`wdoas write-run sh
 map  sxe  #E@S@
 "
 "
