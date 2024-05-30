@@ -10,26 +10,26 @@ map  #%  :1mark v|$mark w
 "
 " pipe marked region to shell
 "
-map  #a  :'v,'ww !sh
-map  #A  'v!'wwrite-run sh
-map  #s  :'v,'ww !doas sh
-map  #S  'v!'wdoas write-run sh
+map  @a@  :'v,'ww !sh
+map  @A@  'v!'wwrite-run sh
+map  @s@  :'v,'ww !doas sh
+map  @S@  'v!'wdoas write-run sh
 "
 "
 " shortcuts to shell
 "
-map     #<#a
-map  }    #}#a
-map  e    #E#a
-map  xx   #<#A
+map     #<@a@
+map  }    #}@a@
+map  e    #E@a@
+map  xx   #<@A@
 map  x}   #}'v!`wwrite-run sh
-map  xe   #E#A
-map  ss   #<#s
-map  s}   #}#s
-map  se   #E#s
-map  sxx  #<#S
+map  xe   #E@A@
+map  ss   #<@s@
+map  s}   #}@s@
+map  se   #E@s@
+map  sxx  #<@S@
 map  sx}  #}'v!`wwrite-run sh
-map  sxe  #E#S
+map  sxe  #E@S@
 "
 "
 " run shell commands on the terminal
