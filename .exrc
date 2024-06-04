@@ -35,15 +35,18 @@ map  \s\   :map  _a_   :'v,'ww !doas sh
 map  \S\   :map  _A_   'v!'wdoas write-run sh
 map  \`S\  :map  _`A_  'v!`wdoas write-run sh
 "
-map  _su_    \s\\S\\`S\:map  #!s  _nosu_
-map  _nosu_  \a\\A\\`A\:map  #!s  _su_
+map  \at\  :map  _at_  i!"xdd:@x
+map  \st\  :map  _at_  i!doas -- "xdd:@x
+"
+map  _su_    \s\\S\\`S\\st\:map  #!s  _nosu_
+map  _nosu_  \a\\A\\`A\\at\:map  #!s  _su_
 map  #!s  _su_
 "
 "
 " run shell commands on the terminal
 "
-map  t   0y$Op0i!"xdd:@x
-map  st  0y$Op0i!doas -- "xdd:@x
+map  _at_  i!"xdd:@x
+map  t   0y$Op0_at_
 "
 "
 " run ex commands
