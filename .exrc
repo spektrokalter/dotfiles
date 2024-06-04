@@ -10,8 +10,9 @@ map  #%  :1mark v|$mark w
 "
 " pipe marked region to shell
 "
-map  @a@  :'v,'ww !sh
-map  @A@  'v!'wwrite-run sh
+map  @a@   :'v,'ww !sh
+map  @A@   'v!'wwrite-run sh
+map  @`A@  'v!`wwrite-run sh
 "
 "
 " shortcuts to shell
@@ -20,19 +21,21 @@ map     #<@a@
 map  }    #}@a@
 map  e    #E@a@
 map  xx   #<@A@
-map  x}   #}@A@
+map  x}   #}@`A@
 map  xe   #E@A@
 "
 "
 " su
 "
-map  %a%  :map  @a@  :'v,'ww !sh
-map  %A%  :map  @A@  'v!'wwrite-run sh
-map  %s%  :map  @a@  :'v,'ww !doas sh
-map  %S%  :map  @A@  'v!'wdoas write-run sh
+map  %a%   :map  @a@   :'v,'ww !sh
+map  %A%   :map  @A@   'v!'wwrite-run sh
+map  %`A%  :map  @`A@  'v!`wwrite-run sh
+map  %s%   :map  @a@   :'v,'ww !doas sh
+map  %S%   :map  @A@   'v!'wdoas write-run sh
+map  %`S%  :map  @`A@  'v!`wdoas write-run sh
 "
-map  @su@    %s%%S%:map  #!s  @nosu@
-map  @nosu@  %a%%A%:map  #!s  @su@
+map  @su@    %s%%S%%`S%:map  #!s  @nosu@
+map  @nosu@  %a%%A%%`A%:map  #!s  @su@
 map  #!s  @su@
 "
 "
