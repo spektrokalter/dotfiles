@@ -4,7 +4,6 @@ map  #<  mvmw
 map  #>  mw
 map  #{  {mv``mw
 map  #}  }mw``mv
-map  #E  mv/^[[:blank:]]*EOF$/mw``
 map  #%  :1mark v|$mark w
 "
 "
@@ -17,12 +16,14 @@ map  @`A@  'v!`wwrite-run sh
 "
 " shortcuts to shell
 "
+map  @e@  mv/^[[:blank:]]*EOF$/mw``
+"
 map     #<@a@
 map  }    #}@a@
-map  e    #E@a@
+map  e    @e@@a@
 map  xx   #<@A@
 map  x}   #}@`A@
-map  xe   #E@A@
+map  xe   @e@@A@
 "
 "
 " su
