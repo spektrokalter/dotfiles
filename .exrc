@@ -38,8 +38,8 @@ map  \`S\  :map  _`A_  'v!`wdoas write-run sh
 map  \at\  :map  _at_  i!"xdd:@x
 map  \st\  :map  _at_  i!doas -- "xdd:@x
 "
-map  _su_    \s\\S\\`S\\st\:map  #!s  _nosu_
-map  _nosu_  \a\\A\\`A\\at\:map  #!s  _su_
+map  _su_    \s\\S\\`S\\st\:map  #!s  _nosu_:
+map  _nosu_  \a\\A\\`A\\at\:map  #!s  _su_:
 map  #!s  _su_
 "
 "
