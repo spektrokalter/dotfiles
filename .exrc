@@ -16,14 +16,14 @@ map  _`A_  'v!`wwrite-run sh
 "
 " shortcuts to shell
 "
-map  _e_  mv/^[[:blank:]]*EOF$/mw``
+map  #!e  mv/^[[:blank:]]*EOF$/mw``
 "
 map     #<_a_
 map  }    #}_a_
-map  e    _e__a_
+map  e    #!e_a_
 map  xx   #<_A_
 map  x}   #}_`A_
-map  xe   _e__A_
+map  xe   #!e_A_
 "
 "
 " su
