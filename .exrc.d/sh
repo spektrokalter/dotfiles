@@ -1,0 +1,4 @@
+map  _a_   :'v,'ww !sh
+map  _A_   'v!'wwrite-run sh
+map  _`A_  'v!`wwrite-run sh
+map  _at_  i!"xdd:@x

@@ -3,6 +3,8 @@
 !/.apirc.d
 !/.apirc.include.d
 
+!/.exrc.d
+
 !/.exrc.include.d
 
 !/.config

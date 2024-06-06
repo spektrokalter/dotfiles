@@ -9,9 +9,7 @@ map  #%  :1mark v|$mark w
 "
 " pipe marked region to shell
 "
-map  _a_   :'v,'ww !sh
-map  _A_   'v!'wwrite-run sh
-map  _`A_  'v!`wwrite-run sh
+so  ~/.exrc.d/sh
 "
 "
 " shortcuts to shell
@@ -28,25 +26,14 @@ map  xe   #!e_A_
 "
 " su
 "
-map  \a\   :map  _a_   :'v,'ww !sh
-map  \A\   :map  _A_   'v!'wwrite-run sh
-map  \`A\  :map  _`A_  'v!`wwrite-run sh
-map  \s\   :map  _a_   :'v,'ww !doas sh
-map  \S\   :map  _A_   'v!'wdoas write-run sh
-map  \`S\  :map  _`A_  'v!`wdoas write-run sh
-"
-map  \at\  :map  _at_  i!"xdd:@x
-map  \st\  :map  _at_  i!doas -- "xdd:@x
-"
-map  _su_    \s\\S\\`S\\st\:map  #!s  _nosu_:
-map  _nosu_  \a\\A\\`A\\at\:map  #!s  _su_:
+map  _su_    :so  ~/.exrc.d/doas-sh:map  #!s  _nosu_:
+map  _nosu_  :so  ~/.exrc.d/sh:map  #!s  _su_:
 map  #!s  _su_
 "
 "
 " run shell commands on the terminal
 "
-map  _at_  i!"xdd:@x
-map  t   0y$Op0_at_
+map  t  0y$Op0_at_
 "
 "
 " run ex commands
