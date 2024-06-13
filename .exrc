@@ -47,9 +47,9 @@ map  :}  0"xy}:@x
 map  @  ^"xy$@x
 "
 "
-map  #1   !!write-run cmdsuggest
+map  #1   !!here cmdsuggest
 map  #2   :w !grep '^\(   \)\?[^[:blank:]]' | more
-map  #!g  'v!'wwrite-run chatgpt-here chat
+map  #!g  'v!'where chatgpt-here chat
 "
 "
 map  OA  

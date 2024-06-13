@@ -1,4 +1,4 @@
 map  _a_   :'v,'ww !doas sh
-map  _A_   'v!'wdoas write-run sh
-map  _`A_  'v!`wdoas write-run sh
+map  _A_   'v!'wdoas here sh
+map  _`A_  'v!`wdoas here sh
 map  _at_  i!doas -- "xdd:@x
